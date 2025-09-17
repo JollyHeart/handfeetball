@@ -1,0 +1,8 @@
+
+handfeetball-website/
+│
+├── index.html
+├── style.css
+├── script.js
+└── images/
+    └── logo.png  (placeholder, add your real logo later)
