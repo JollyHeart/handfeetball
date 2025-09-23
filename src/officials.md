@@ -10,5 +10,6 @@ permalink: "/officials/"
 Every Handfeetball game is supervised by trained officials:
 
 - **Referee** – ensures the rules are followed.
-- **Assistant Referees** – monitor sidelines and fouls.
-- **Scorekeeper** – tracks points and time.
+- **Lineman** – monitor sidelines and fouls.
+- **Umpire** - monitor the Goal Ring and fouls.
+- **Timekeeper** – tracks points and time.
