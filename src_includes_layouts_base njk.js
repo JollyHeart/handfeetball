@@ -1,0 +1,19 @@
+src/_includes/layouts/base.njk
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }} | Handfeetball</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-orange-300 min-h-screen flex flex-col">
+  {% include "partials/header.njk" %}
+  <main class="flex-grow container mx-auto px-4 py-6">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+</body>
+</html>
+
