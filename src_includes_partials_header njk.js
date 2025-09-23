@@ -1,0 +1,19 @@
+src/_includes/partials/header.njk
+
+<header class="bg-white/80 backdrop-blur-md shadow-md py-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="/" class="flex items-center space-x-2 text-2xl font-bold text-blue-900">
+      <img src="/images/image-logo.png" alt="Handfeetball Logo" class="h-10">
+      <span>Handfeetball</span>
+    </a>
+    <nav>
+      <ul class="flex space-x-6 text-blue-800 font-semibold">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/rules/">Rules</a></li>
+        <li><a href="/officials/">Officials</a></li>
+        <li><a href="/learnmore/">Learn More</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
