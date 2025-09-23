@@ -1,0 +1,8 @@
+src/_includes/layouts/page.njk
+
+{% extends "base.njk" %}
+{% block content %}
+<article class="prose lg:prose-xl mx-auto">
+  {{ content | safe }}
+</article>
+{% endblock %}
