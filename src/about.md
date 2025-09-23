@@ -1,5 +1,3 @@
-src/about.md
-
 ---
 title: "About Handfeetball"
 layout: "page"
