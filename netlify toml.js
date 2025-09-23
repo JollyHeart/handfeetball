@@ -1,0 +1,10 @@
+netlify.toml
+
+[build]
+  publish = "_site"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301
