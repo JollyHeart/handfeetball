@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: main
+  
+publish_mode: editorial_workflow
+media_folder: "src/images/uploads"    # where uploaded images will be stored in the repo
+public_folder: "/images/uploads"      # public path for the built site
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "index"
+        file: "src/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "About"
+        name: "about"
+        file: "src/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Rules"
+        name: "rules"
+        file: "src/rules.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Officials"
+        name: "officials"
+        file: "src/officials.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Learn More"
+        name: "learnmore"
+        file: "src/learnmore.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Contact"
+        name: "contact"
+        file: "src/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          
