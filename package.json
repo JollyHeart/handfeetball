@@ -1,0 +1,18 @@
+package.json
+
+{
+  "name": "handfeetball",
+  "version": "1.0.0",
+  "description": "Handfeetball official website built with Eleventy and Netlify CMS",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
+  }
+}
+
