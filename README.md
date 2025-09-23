@@ -59,18 +59,18 @@ handfeetball/
 git clone https://github.com/your-username/handfeetball.git
 cd handfeetball
 
-Install dependencies
+2. Install dependencies
 
 npm install
 
-Run the development server
+3. Run the development server
 
 npm start
 
 Your site will be available locally at:
 👉 http://localhost:8080
 
-Build for production
+4. Build for production
 
 npm run build
 
