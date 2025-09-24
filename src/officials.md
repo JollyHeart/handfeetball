@@ -1,5 +1,3 @@
-src/officials.md
-
 ---
 title: "Officials in Handfeetball"
 layout: "page"
