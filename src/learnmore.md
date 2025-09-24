@@ -1,5 +1,3 @@
-src/learnmore.md
-
 ---
 title: "Learn More About Handfeetball"
 layout: "page"
