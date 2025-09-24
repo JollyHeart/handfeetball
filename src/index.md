@@ -1,5 +1,3 @@
-src/index.md
-
 ---
 title: "Welcome to Handfeetball"
 layout: "page"
