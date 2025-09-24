@@ -2,16 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ title }} | Handfeetball</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/css/style.css" rel="stylesheet">
+  <title>{{ title or "Handfeetball" }}</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-gradient-to-r from-blue-500 to-orange-300 min-h-screen flex flex-col">
-  {% include "partials/header.njk" %}
-  <main class="flex-grow container mx-auto px-4 py-6">
-    {{ content | safe }}
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/rules/">Rules</a>
+      <a href="/officials/">Officials</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
   </main>
-  {% include "partials/footer.njk" %}
+
+  <footer>
+    <p>&copy; {{ "now" | date("yyyy") }} Handfeetball</p>
+  </footer>
 </body>
 </html>
-
