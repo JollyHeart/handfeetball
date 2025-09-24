@@ -1,4 +1,11 @@
+const { DateTime } = require("luxon");
+
 module.exports = function(eleventyConfig) {
+  // Add a date filter for Nunjucks
+  eleventyConfig.addFilter("date", function(dateObj, format = "yyyy") {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(format);
+  });
+
   // Copy static assets like images, CSS, JS
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/scripts");
