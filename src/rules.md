@@ -1,5 +1,3 @@
-src/rules.md
-
 ---
 title: "Rules of Handfeetball"
 layout: "page"
