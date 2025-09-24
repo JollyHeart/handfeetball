@@ -1,5 +1,3 @@
-src/contact.md
-
 ---
 title: "Contact Us"
 layout: "page"
