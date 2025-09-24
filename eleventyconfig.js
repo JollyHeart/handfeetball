@@ -7,8 +7,8 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src",
-      includes: "_includes",
-      layouts: "_includes/layouts",
+      includes: "_includes",        // looks inside src/_includes
+      layouts: "_includes/layouts", // looks inside src/_includes/layouts
       output: "_site"
     },
     templateFormats: ["md", "njk", "html"],
@@ -17,5 +17,3 @@ module.exports = function(eleventyConfig) {
     dataTemplateEngine: "njk"
   };
 };
-eleventyConfig.addPassthroughCopy("admin");
-eleventyConfig.addPassthroughCopy("src/images"); // so uploaded images are published
