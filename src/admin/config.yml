@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main   # or 'master' if your repo uses master
+  branch: main   # use "master" if your repo uses that branch
 
 media_folder: "src/images/uploads"    # where uploaded images will be stored
 public_folder: "/images/uploads"
@@ -8,6 +8,24 @@ public_folder: "/images/uploads"
 publish_mode: editorial_workflow
 
 collections:
+  # --- Site Settings (global data for SEO, logo, etc.)
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Global Site Settings"
+        name: "site"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Base URL", name: "url", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image", allow_multiple: false }
+          - { label: "Favicon", name: "favicon", widget: "image", allow_multiple: false }
+          - { label: "Open Graph Image", name: "image", widget: "image", allow_multiple: false }
+          - { label: "Primary Font", name: "font", widget: "string", default: "Arial, sans-serif" }
+          - { label: "Theme Color", name: "theme_color", widget: "string", default: "#000000" }
+
+  # --- Pages Collection (edit existing content pages)
   - name: "pages"
     label: "Pages"
     files:
@@ -47,3 +65,13 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
+  # --- Styles / Theme (optional CSS customization)
+  - name: "theme"
+    label: "Theme Styles"
+    files:
+      - label: "Custom Styles"
+        name: "styles"
+        file: "src/styles.css"
+        fields:
+          - { label: "CSS Code", name: "raw", widget: "code", default_language: "css" }
