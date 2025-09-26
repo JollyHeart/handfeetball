@@ -1,3 +1,4 @@
+```js
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
@@ -13,7 +14,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/scripts");   // keep this if you have custom JS
   eleventyConfig.addPassthroughCopy("src/styles.css");
-  eleventyConfig.addPassthroughCopy("src/admin");
+  eleventyConfig.addPassthroughCopy("src/admin");     // ✅ ensures admin/index.html + config.yml go to _site/admin
 
   return {
     dir: {
@@ -28,3 +29,4 @@ module.exports = function(eleventyConfig) {
     dataTemplateEngine: "njk"
   };
 };
+```
